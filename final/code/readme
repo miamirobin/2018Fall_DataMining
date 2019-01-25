@@ -1,0 +1,32 @@
+
+For google jobs dataset:
+0. Download the google job dataset from Kaggle directly.
+
+1. Move to google/ folder, please type 'cd google'
+
+2. To do tfidf, please type 'python3 tfidf.py google_job.csv prefq'
+
+3. To transform origin data by matching keyword, 
+   please type 'python3 transform_google.py google_job.csv keyword.csv transac1 
+          and  'python3 transform_google.py google_job.csv keyword2.csv transac2'
+
+4. To run Eclat algorithm, please type 'python3 eclat_google.py transac1 0.01 output1'
+                                  and  'python3 eclat_google.py transac2 0.01 output2'
+
+
+For github repository dataset:
+0. We use download_BigQuery.py to download the github dataset from BigQuery database.
+
+1. Since github.csv is too large, we can't upload it to ceiba, you can download it from below link
+   https://drive.google.com/open?id=1EFyWCUnpF583MrfBbwu-wqB9url3oEf3
+
+   Put github.csv into github/ 
+
+2. Move to github/ folder, please type 'cd github'
+
+3. To transform origin data by matching keyword, 
+   please type 'python3 transform_github.py github.csv keyword_github.csv transac'
+
+4. To run Eclat algorithm, please type 'python3 eclat_github.py transac 0.025 output'
+
+
